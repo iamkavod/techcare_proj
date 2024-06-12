@@ -1,0 +1,845 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Manrope", sans-serif;
+}
+
+/* VARIABLES CSS */
+:root {
+  --white: #fff;
+  --black: #000;
+  --greenShade-deep: #01f0d0;
+  --greenShade-light: #d8fcf7;
+  --darkShade: #072635;
+  --grayShade-A: #e3e4e6;
+  --grayShade-B: #f6f7f8;
+  --grayShade-C: #ededed;
+  --maroon-light: #f4f0fe;
+  --maroon: #e66fd2;
+  --purple: #8c6fe6;
+  --blueShade: #e0f3fa;
+  --redShade: #ffe6e9;
+  --maroonShade: #ffe6f1;
+}
+
+body {
+  background-color: var(--grayShade-A);
+  width: 100%;
+}
+
+/* MAIN CONTAINER */
+.main__container {
+  max-width: 2000px;
+  padding: 20px;
+}
+
+.main__container > .header__container {
+  background: white;
+  border-radius: 100px;
+  padding: 10px 20px;
+}
+
+.main__container > .header__container > .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__container > .header__container > .nav > .nav__logo {
+  width: 200px;
+  height: 40px;
+}
+
+.main__container > .header__container > .nav > .nav__menu > .nav__list {
+  display: flex;
+  text-align: center;
+}
+
+.main__container
+  > .header__container
+  > .nav
+  > .nav__menu
+  > .nav__list
+  > .nav__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+}
+
+.main__container
+  > .header__container
+  > .nav
+  > .nav__menu
+  > .nav__list
+  > .nav__item:hover {
+  background: var(--greenShade-deep);
+  border-radius: 100px;
+}
+
+.main__container
+  > .header__container
+  > .nav
+  > .nav__menu
+  > .nav__list
+  > .nav__item
+  > .nav__link {
+  color: black;
+  font-weight: bold;
+}
+
+.main__container > .header__container > .nav > .nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main__container > .header__container > .nav > .nav__actions > .dr__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__container
+  > .header__container
+  > .nav
+  > .nav__actions
+  > .dr__profile
+  > #dr__image {
+  width: 40px;
+  height: 40px;
+}
+
+.main__container > .header__container > .nav > .dr_details {
+  display: none;
+}
+
+.main__container
+  > .header__container
+  > .nav
+  > .nav__actions
+  > .dr__profile
+  > .dr_detailsB
+  > .dr__name {
+  font-weight: bold;
+}
+
+.main__container > .header__container > .nav > .nav__actions > .divider {
+  height: 40px;
+  width: 1px;
+  background: var(--grayShade-C);
+}
+
+.main__container > .header__container > .nav > .nav__actions > .settings {
+  width: 20px;
+  height: 20px;
+}
+
+.main__container
+  > .header__container
+  > .nav
+  > .nav__actions
+  > .nav__toggle
+  > .menu {
+  width: 4px;
+  height: 18px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+/* BODY SECTION */
+.main__container > .bodySection__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  width: 100%;
+  gap: 20px;
+}
+
+/* PATIENTS */
+.main__container > .bodySection__container > .patients__section__container {
+  background: var(--white);
+  width: 20vw;
+  height: 1300px;
+  border-radius: 20px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 30px 0;
+  padding: 10px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 700px;
+  overflow-y: auto;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients__body::-webkit-scrollbar {
+  width: 5px;
+  background: var(--grayShade-C);
+  border-radius: 100px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients__body::-webkit-scrollbar-thumb {
+  height: 2px;
+  width: 5px;
+  background-color: var(--black);
+  border-radius: 100px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients__body
+  > .all__patients {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients__body
+  > .all__patients
+  > .image__and__details {
+  display: flex;
+  gap: 40px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients__body
+  > .all__patients
+  > .image__and__details
+  > .patient__image {
+  width: 40px;
+  height: 40px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients__body
+  > .all__patients
+  > .image__and__details
+  > .patient__name__gender__age {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients__body
+  > .all__patients
+  > .image__and__details
+  > .patient__name__gender__age
+  > .patient__name {
+  font-weight: bold;
+}
+
+.main__container
+  > .bodySection__container
+  > .patients__section__container
+  > .patients__body
+  > .all__patients:hover {
+  background: var(--greenShade-light);
+}
+
+/* DIAGNOSIS */
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 40px 0;
+  gap: 20px;
+}
+
+/* Diagnosis History Container */
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container {
+  background: var(--white);
+  width: 58vw;
+  height: 930px;
+  border-radius: 20px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__history__heading {
+  padding: 20px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart {
+  width: 56vw;
+  height: 450px;
+  padding: 20px 40px;
+  margin: 20px;
+  background: var(--maroon-light);
+  display: flex;
+  justify-content: space-between;
+  /* gap: 50px; */
+  border-radius: 12px;
+  color: var(--black);
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details__chart
+  > #bloodPressureChart {
+  width: 700px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details__chart {
+  height: 350px;
+  padding: 10px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details__chart
+  > .chart__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details__chart
+  > .chart__heading
+  > .chart__date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details
+  > .systolic__data,
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details
+  > .diastolic__data {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details
+  > .systolic__data
+  > .sys__dot__data,
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details
+  > .diastolic__data
+  > .dias__dot__data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details
+  > .systolic__data
+  > .sys__dot__data
+  > .dot__sys {
+  background: var(--maroon);
+  height: 10px;
+  width: 10px;
+  border-radius: 100px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details
+  > .diastolic__data
+  > .dias__dot__data
+  > .dot__dias {
+  background: var(--purple);
+  height: 10px;
+  width: 10px;
+  border-radius: 100px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details
+  > .systolic__data
+  > .img__av,
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details
+  > .diastolic__data
+  > .img__av {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__chart
+  > .chart__details
+  > .chart__divider {
+  background: var(--grayShade-A);
+  height: 1px;
+  width: 100%;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__health__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__health__container
+  > .diagnosis__health__check {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  padding: 50px;
+  border-radius: 12px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__health__container
+  > .diagnosis__health__check
+  > img {
+  width: 100px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__health__container
+  > .respiratory {
+  background: var(--blueShade);
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__health__container
+  > .temperature {
+  background: var(--redShade);
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__health__container
+  > .heart__rate {
+  background: var(--maroonShade);
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__history__container
+  > .diagnosis__health__container
+  > .heart__rate
+  > .heart__low {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Diagnostic List */
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container {
+  background: var(--white);
+  width: 58vw;
+  height: 349px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__heading {
+  margin: 0 0 20px 0;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__table__container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  position: relative;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__table__container
+  table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__table__container
+  th {
+  background-color: var(--grayShade-A);
+  color: var(--darkShade);
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__table__container
+  th:first-child {
+  border-radius: 100px 0 0 100px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__table__container
+  th:last-child {
+  border-radius: 0 100px 100px 0;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__table__container
+  th,
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__table__container
+  td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--grayShade-B);
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__table__container
+  .tbody {
+  max-height: 200px;
+  overflow-y: auto;
+  display: block;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_diagnosis__section__container
+  > .diagnosis__list__container
+  > .diagnostic__table__container
+  .tbody
+  table {
+   width: 100%;
+   table-layout: fixed;
+  }
+
+  .main__container
+    > .bodySection__container
+    > .patient_diagnosis__section__container
+    > .diagnosis__list__container
+    > .diagnostic__table__container
+    .tbody
+    tbody {
+     display: block;
+    }
+
+/* RESULTS */
+.main__container
+  > .bodySection__container
+  > .patient_results__section__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 40px 0;
+  gap: 20px;
+}
+
+/* patient profile */
+.main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container {
+  background: var(--white);
+  width: 20vw;
+  height: 930px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container
+  > .profile__image__and__name {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   margin: 20px 0;
+  }
+
+  .main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container
+  > .profile__image__and__name
+  > img {
+   width: 200px;
+   height: 200px;
+  }
+
+  .main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container
+  > .profile__image__and__name
+  > h1 {
+   font-weight: bold;
+   text-align: center;
+  }
+
+  .main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container 
+  > .patient__db__details {
+   display: flex;
+   flex-direction: column;
+   /* gap: 10px; */
+  }
+
+  .main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container 
+  > .patient__db__details
+  > .patient__db {
+   display: flex;
+   gap: 50px;
+   align-items: center;
+   margin: 20px 30px;
+  }
+
+  .main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container 
+  > .patient__db__details
+  > .patient__db
+  > .img__container {
+   background: var(--grayShade-B);
+   padding: 20px;
+   width: 30px;
+   height: 30px;
+   border-radius: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container 
+  > .patient__db__details
+  > .patient__db 
+  > .db__details 
+  > .db__data {
+   font-weight: bold;
+  }
+
+  .main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container 
+  > .button {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+  } 
+
+  .main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__profile__container 
+  > .button 
+  > button {
+   background: var(--greenShade-deep);
+   font-weight: bold;
+   border: none;
+   padding: 15px;
+   border-radius: 100px;
+   width: 250px;
+   margin: 40px 0;
+  }
+
+/* lab result */
+.main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__lab__results__container {
+  background: var(--white);
+  width: 20vw;
+  height: 349px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__lab__results__container
+  > .lab-results {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin: 20px 0;
+  }
+
+.main__container
+  > .bodySection__container
+  > .patient_results__section__container
+  > .patient__lab__results__container
+  > .lab-results
+  > .results {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }

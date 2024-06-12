@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/mobile.css">
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script src="js/data.js"></script>
+ <title>Tech.Care</title>
+</head>
+
+<body>
+
+ <main class="main__container">
+  <!-- HEADER SECTION -->
+  <header class="header__container">
+
+   <nav class="nav nav__container">
+    <!-- LOGO -->
+    <img src="img/TestLogo.svg" class="nav__logo">
+
+    <!-- MENU -->
+    <div class="nav__menu" id="nav__menu">
+     <ul class="nav__list">
+      <li class="nav__item">
+       <img src="img/overview.svg" alt="Overview">
+       <a href="#" class="nav__link">Overview</a>
+      </li>
+
+      <li class="nav__item">
+       <img src="img/patients.svg" alt="Patients">
+       <a href="#" class="nav__link">Patients</a>
+      </li>
+
+      <li class="nav__item">
+       <img src="img/schedule.svg" alt="Schedule">
+       <a href="#" class="nav__link">Schedule</a>
+      </li>
+
+      <li class="nav__item">
+       <img src="img/message.svg" alt="">
+       <a href="#" class="nav__link">Messages</a>
+      </li>
+
+      <li class="nav__item">
+       <img src="img/transactions.svg" alt="Transactions">
+       <a href="#" class="nav__link">Transactions</a>
+      </li>
+     </ul>
+    </div>
+
+
+    <div class="dr_details" id="dr__details">
+     <p class="dr__name">Dr. Jose Simmons</p>
+     <p class="dr__position">General Practitioner</p>
+    </div>
+
+    <div class="nav__actions">
+     <!-- PROFILE & SETTINGS -->
+     <div class="dr__profile">
+      <img src="img/Jose.png" alt="Dr. Jose" id="dr__image">
+      <div class="dr_detailsB">
+       <p class="dr__name">Dr. Jose Simmons</p>
+       <p class="dr__position">General Practitioner</p>
+      </div>
+     </div>
+
+     <div class="divider"></div>
+
+     <img src="img/settings.svg" alt="Settings" class="settings">
+
+     <!-- Toggle button -->
+     <div class="nav__toggle" id="nav__toggle">
+      <img src="img/menuvert.png" alt="Menu" class="menu">
+     </div>
+    </div>
+   </nav>
+  </header>
+
+
+  <!-- BODY SECTION -->
+  <main class="bodySection__container">
+   <!-- PATIENTS -->
+   <section class="patients__section__container">
+    <!-- Heading -->
+    <div class="patients_heading">
+     <h1>Patients</h1>
+     <img src="img/search.svg" alt="Search">
+    </div>
+
+    <!-- patients body -->
+    <div class="patients__body">
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Emily.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Emily Williams</p>
+        <p class="patient__gender__age">Female, 18</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu" class="menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Ryan.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Ryan Johnson</p>
+        <p class="patient__gender__age">Male, 45</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Brandon.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Brandon Mitchell</p>
+        <p class="patient__gender__age">Male, 36</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Jessica.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name" id="name"></p>
+        <p class="patient__gender__age">
+         <span id="gender"></span>, <span id="age"></span>
+        </p>
+
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Samantha.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Samantha Johnson</p>
+        <p class="patient__gender__age">Female, 56</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Ashley.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Ashley Martinez</p>
+        <p class="patient__gender__age">Female, 54</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Olivia.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Olyvia Brown</p>
+        <p class="patient__gender__age">Female, 32</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Tyler.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Tyler Davis</p>
+        <p class="patient__gender__age">Male, 19</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Kevin.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Kevin Anderson</p>
+        <p class="patient__gender__age">Male, 30</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Dylan.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Dylan Thompson</p>
+        <p class="patient__gender__age">Male, 36</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Nathan.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Nathan Evans</p>
+        <p class="patient__gender__age">Male, 58</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+     <div class="all__patients">
+      <div class="image__and__details">
+       <img src="img/Mike.png" alt="Patient" class="patient__image">
+       <div class="patient__name__gender__age">
+        <p class="patient__name">Mike Nolan</p>
+        <p class="patient__gender__age">Male, 31</p>
+       </div>
+      </div>
+      <img src="img/menuHor.svg" alt="Menu">
+     </div>
+    </div>
+   </section>
+
+   <!-- DIAGNOSIS -->
+   <section class="patient_diagnosis__section__container">
+    <!-- DIAGNOSIS HISTORY -->
+    <div class="diagnosis__history__container">
+     <!-- Heading -->
+     <div class="diagnosis__history__heading">
+      <h1>Diagnosis History</h1>
+     </div>
+     <div class="diagnosis__chart">
+      <div class="chart__details__chart">
+       <div class="chart__heading">
+        <h1>Blood Pressure</h1>
+        <div class="chart__date">
+         <p>Last 6 months</p>
+         <img src="img/expand.svg" alt="ArrowDown">
+        </div>
+       </div>
+       <canvas id="bloodPressureChart" width="200"></canvas>
+      </div>
+      <div class="chart__details">
+       <div class="systolic__data">
+        <div class="sys__dot__data">
+         <div class="dot__sys"></div>
+         <p>Systolic</p>
+        </div>
+        <h1>160</h1>
+        <div class="img__av">
+         <img src="img/ArrowUp.svg" alt="ArrowUp">
+         <p>Higher than Average</p>
+        </div>
+       </div>
+
+       <div class="chart__divider"></div>
+
+       <div class="diastolic__data">
+        <div class="dias__dot__data">
+         <div class="dot__dias"></div>
+         <p>Diastolic</p>
+        </div>
+        <h1>78</h1>
+        <div class="img__av">
+         <img src="img/ArrowDown.svg" alt="ArrowUp">
+         <p>Lower than Average</p>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <div class="diagnosis__health__container">
+      <div class="diagnosis__health__check respiratory">
+       <img src="img/respiratory rate.png" alt="Respiratory Rate">
+       <div class="res__rate">
+        <p>Respiratory Rate</p>
+        <h1>20 bpm</h1>
+       </div>
+       <p>Normal</p>
+      </div>
+      <div class="diagnosis__health__check temperature">
+       <img src="img/temperature.png" alt="Respiratory Rate">
+       <div class="res__rate">
+        <p>Temperature</p>
+        <h1>98.6&deg;F</h1>
+       </div>
+       <p>Normal</p>
+      </div>
+      <div class="diagnosis__health__check heart__rate">
+       <img src="img/heartrate.png" alt="Respiratory Rate">
+       <div class="res__rate">
+        <p>Heart Rate</p>
+        <h1>78 bpm</h1>
+       </div>
+       <div class="heart__low">
+        <img src="img/ArrowDown.svg" alt="ArrowDown">
+        <p>Lower than Average</p>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <!-- DIAGNOSIS LIST -->
+    <div class="diagnosis__list__container">
+     <div class="diagnostic__heading">
+      <h1>Diagnosis List</h1>
+     </div>
+
+     <div class="diagnostic__table__container">
+      <table>
+       <thead>
+        <tr>
+         <th>Problem/Diagnosis</th>
+         <th>Description</th>
+         <th>Status</th>
+        </tr>
+       </thead>
+       <tbody id="diagnostic_list">
+        <tr>
+         <td id="diagnostic-name-0"></td>
+         <td id="diagnostic-description-0"></td>
+         <td id="diagnostic-status-0"></td>
+        </tr>
+        <tr>
+         <td id="diagnostic-name-1"></td>
+         <td id="diagnostic-description-1"></td>
+         <td id="diagnostic-status-1"></td>
+        </tr>
+        <tr>
+         <td id="diagnostic-name-2"></td>
+         <td id="diagnostic-description-2"></td>
+         <td id="diagnostic-status-2"></td>
+        </tr>
+        <tr>
+         <td id="diagnostic-name-3"></td>
+         <td id="diagnostic-description-3"></td>
+         <td id="diagnostic-status-3"></td>
+        </tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </section>
+
+   <!-- RESULTS -->
+   <section class="patient_results__section__container">
+    <!-- PATIENT PROFILE -->
+    <div class="patient__profile__container">
+     <div class="profile__image__and__name">
+      <img src="" id="profile-picture">
+      <h1 id="name"></h1>
+     </div>
+
+     <!-- patient details -->
+     <div class="patient__db__details">
+      <div class="patient__db">
+       <div class="img__container">
+        <img src="img/schedule.svg" alt="DOB">
+       </div>
+       <div class="db__details">
+        <p>Date Of Birth</p>
+        <p id="dob" class="db__data"></p>
+       </div>
+      </div>
+      <div class="patient__db">
+       <div class="img__container">
+        <img src="img/FemaleIcon.png" alt="DOB">
+       </div>
+       <div class="db__details">
+        <p>Gender</p>
+        <p id="gender" class="db__data"></p>
+       </div>
+      </div>
+      <div class="patient__db">
+       <div class="img__container">
+        <img src="img/PhoneIcon.png" alt="DOB">
+       </div>
+       <div class="db__details">
+        <p>Contact Info.</p>
+        <p id="phone" class="db__data"></p>
+       </div>
+      </div>
+      <div class="patient__db">
+       <div class="img__container">
+        <img src="img/PhoneIcon.png" alt="DOB">
+       </div>
+       <div class="db__details">
+        <p>Emmergency Contacts</p>
+        <p id="emergency-contact" class="db__data"></p>
+       </div>
+      </div>
+      <div class="patient__db">
+       <div class="img__container">
+        <img src="img/InsuranceIcon.png" alt="DOB">
+       </div>
+       <div class="db__details">
+        <p>Insurance Provider</p>
+        <p id="insurance" class="db__data"></p>
+       </div>
+      </div>
+     </div>
+     <div class="button">
+      <button>See All Information</button>
+     </div>
+    </div>
+
+    <!-- LAB RESULT -->
+    <div class="patient__lab__results__container">
+     <div class="lab__result__header">
+      <h1>Lab Results</h1>
+     </div>
+     <div id="lab-results" class="lab-results">
+      <div class="results">
+       <p id="lab-result-0"></p>
+       <img src="img/download.svg" alt="Download">
+      </div>
+      <div class="results">
+       <p id="lab-result-1"></p>
+       <img src="img/download.svg" alt="Download">
+      </div>
+      <div class="results">
+       <p id="lab-result-2"></p>
+       <img src="img/download.svg" alt="Download">
+      </div>
+      <div class="results">
+       <p id="lab-result-3"></p>
+       <img src="img/download.svg" alt="Download">
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+
+
+ </main>
+
+
+ <script src="js/script.js"></script>
+ <script src="js/charts.js"></script>
+</body>
+
+</html>
